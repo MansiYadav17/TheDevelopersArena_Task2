@@ -1,0 +1,34 @@
+====================================================================
+TEST MATRIX - VALIDATION SUITE RECORD
+====================================================================
+
+[TEST ID 01] TARGET: Standard Pathway Execution
+- Input Name: Priya
+- Input Marks: 85
+- Expected Output: Grade B, Message: "Very Good! Keep it up! 👍"
+- Result: STATUS_PASS
+
+[TEST ID 02] TARGET: High Boundary-Value Evaluation
+- Input Name: Alex
+- Input Marks: 100
+- Expected Output: Grade A, Message: "Excellent work! You're a superstar! 👍"
+- Result: STATUS_PASS
+
+[TEST ID 03] TARGET: Out-of-Bounds Negative Bounds Mitigation
+- Input Name: John
+- Input Marks: -5
+- Expected Output: "Error: Please enter a value between 0 and 100." -> Refresh Input
+- Result: STATUS_PASS
+
+[TEST ID 04] TARGET: Out-of-Bounds Maximum Bounds Mitigation
+- Input Name: Sam
+- Input Marks: 105
+- Expected Output: "Error: Please enter a value between 0 and 100." -> Refresh Input
+- Result: STATUS_PASS
+
+[TEST ID 05] TARGET: Non-Numeric Literal Character Interception
+- Input Name: Lily
+- Input Marks: ninety
+- Expected Output: "Invalid input! Please enter a numerical value for marks." -> Refresh Input
+- Result: STATUS_PASS
+
